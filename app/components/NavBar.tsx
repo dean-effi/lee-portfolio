@@ -10,7 +10,7 @@ export default function NavBar() {
   console.log(theme)
   return (
     <nav
-      className={`flex justify-between md:px-[52px] lg:px-[84px] px-9 pt-16 pb-9 ${
+      className={`flex justify-between md:px-[52px] lg:px-[84px] px-9 pt-16 pb-9 tracking-[-8%] ${
         theme === "dark" ? "text-neutral-50 bg-neutral-950" : ""
       }`}
     >
