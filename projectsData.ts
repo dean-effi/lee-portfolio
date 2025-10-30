@@ -1,5 +1,4 @@
 export type ProjectType = {
-  id: string
   name: string
   preview: string
   images: string[]
@@ -10,7 +9,6 @@ export type ProjectType = {
 
 const projectsData: ProjectType[] = [
   {
-    id: "1",
     name: "Alef Bet: Archive of Hebrew Manuscripts",
     preview: "/temp.png",
     images: [],
@@ -21,7 +19,6 @@ const projectsData: ProjectType[] = [
       "Created during a third-year Advanced Graphic Design course, instructed by Renana Irshai.",
   },
   {
-    id: "2",
     name: "The Communist Manifesto",
     preview: "/temp.png",
     images: [""],
@@ -32,7 +29,6 @@ const projectsData: ProjectType[] = [
       "Created during a third-year Advanced Typography course, instructed by Dan Ozeri.",
   },
   {
-    id: "3",
     name: "Gag Eden",
     preview: "/temp.png",
     images: [""],
@@ -44,7 +40,6 @@ const projectsData: ProjectType[] = [
   },
 
   {
-    id: "4",
     name: "Zeit",
     preview: "/temp.png",
     images: [""],
@@ -55,7 +50,6 @@ const projectsData: ProjectType[] = [
       "Created during a third-year UX/UI course, instructed by Neomi Gelbach.",
   },
   {
-    id: "5",
     name: "Hassidut Chabad",
     preview: "/temp.png",
     images: [""],
