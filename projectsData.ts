@@ -11,7 +11,7 @@ const projectsData: ProjectType[] = [
   {
     name: "Alef Bet: Archive of Hebrew Manuscripts",
     preview: "/temp.png",
-    images: [],
+    images: ["/alefbet/01.webp"],
     type: ["branding", "graphic design"],
     descrpition:
       "A visual archive of Hebrew manuscripts, showcasing ancient writings from diverse Jewish regions and communities around the world. The project explores the Hebrew script, scriptural traditions, and textual memory, offering a rich foundation for visual interpretation. It brings together manuscripts from diverse geographic regions and cultural backgrounds, reflecting the wide dispersion of Jewish life. The design creates a connection between the ancient and the contemporary: the manuscripts are presented in their original historical appearance, with the Hebrew letter as a central focus. Contemporary design elements—modern typography, bold color palettes, and free compositions—introduce a fresh interpretation of the archival material and open a rich visual space between past and present.",
