@@ -9,16 +9,23 @@ export default function Home() {
 
   const project = projectsData.find(p => p.name === path)
   console.log(project)
+  if (!project) return <div>no project found</div>
   return (
     <div className="bg-neutral-950 text-neutral-50">
       {" "}
       {path}
-      <Image
-        alt={project?.name!}
-        src={project?.images[0]!}
-        width={1000}
-        height={1000}
-      />
+      {project.images.map((img, i) => {
+        console.log(i)
+        return (
+          <Image
+            key={img}
+            alt={project?.name!}
+            src={img}
+            width={1000}
+            height={1000}
+          />
+        )
+      })}
     </div>
   )
 }
