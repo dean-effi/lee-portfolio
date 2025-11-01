@@ -5,9 +5,7 @@ import { usePathname } from "next/navigation"
 
 export default function NavBar() {
   let path = decodeURI(usePathname()).split("/")[1]
-  console.log(path)
   const theme = path === "" || path === "about" ? "light" : "dark"
-  console.log(theme)
   return (
     <nav
       className={`flex justify-between md:px-[52px] lg:px-[84px] px-9 pt-16 pb-9 tracking-[-8%] ${
