@@ -83,8 +83,8 @@ const projectsData: ProjectType[] = [
     name: "Zeit",
     preview: "/zeit/preview.webp",
     images: [
-      "/zeit/01.webp",
       "/zeit/02.webp",
+      "/zeit/01.webp",
       "/zeit/03.webp",
       "/zeit/04.webp",
       "/zeit/05.webp",

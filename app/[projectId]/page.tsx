@@ -11,14 +11,14 @@ export default function Home() {
   if (!project) return <div>no project found</div>
   return (
     <div className="bg-neutral-950 text-neutral-50 px-9 md:px-13 pt-6 xl:gap-18  md:pt-10 xl:grid xl:grid-cols-2 relative">
-      <div className=" indent-[42px] md:indent-18 xl:h-max xl:sticky xl:top-10 ">
+      <div className=" leading-[0.9] tracking-[-0.08em]  indent-[42px] md:indent-18 xl:h-max xl:sticky xl:top-10 less-space ">
         <div className="mb-12">
           <h1 className="text-2xl md:text-[28px] ">{project.name}</h1>
           <p className="italic indent-0">
             {project.type.map(t => `(${t})`)}
           </p>
         </div>
-        <p className=" md:text-xl">{project.descrpition}</p>
+        <p className=" md:text-xl ">{project.descrpition}</p>
         <p className="italic  md:text-xl">{project.created}</p>
       </div>
 

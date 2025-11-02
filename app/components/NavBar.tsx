@@ -8,7 +8,7 @@ export default function NavBar() {
   const theme = path === "" || path === "about" ? "light" : "dark"
   return (
     <nav
-      className={`flex justify-between md:px-[52px] lg:px-[84px] px-9 pt-16 pb-9 tracking-[-8%] ${
+      className={`flex justify-between md:px-[52px] lg:px-[84px] px-9 pt-16 pb-9 tracking-[-0.08em] ${
         theme === "dark" ? "text-neutral-50 bg-neutral-950" : ""
       }`}
     >

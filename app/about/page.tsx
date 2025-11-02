@@ -3,9 +3,9 @@ import Footer from "./Footer"
 
 export default function about() {
   return (
-    <div className=" leading-tight tracking-[-8%]">
+    <div className=" leading-tight tracking-[-0.08em] ">
       <main className="px-9 md:px-13 xl:pt-14 ">
-        <div className="text-[24px] md:text-[28px] mb-9 ">
+        <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] mb-9 ">
           <p className="indent-[42px] lg:indent-[72px]">
             I'm Lee, a 21-year-old Visual Communication student in my
             4th year at Bezalel Academy of Arts and Design in
