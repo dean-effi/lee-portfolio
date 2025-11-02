@@ -1,0 +1,35 @@
+import Link from "next/link"
+import React from "react"
+
+export default function Footer() {
+  return (
+    <footer>
+      <ul className="flex justify-center gap-[66px] lg:pt-30 md:justify-end md:pr-10 pt-20">
+        <li>
+          <Link href={"https://www.instagram.com/leeeeee.indd/"}>
+            /instagram
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={
+              "https://www.linkedin.com/in/lee-mor-yosef-8254aa395/"
+            }
+          >
+            //linkedin
+          </Link>
+        </li>
+        <li>
+          <Link
+            target="_"
+            href={
+              "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=lilymy28@gmail.com"
+            }
+          >
+            ///email
+          </Link>
+        </li>
+      </ul>
+    </footer>
+  )
+}

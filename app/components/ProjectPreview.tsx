@@ -33,12 +33,13 @@ export default function ProjectPreview({
           <span className="text-xl md:text-[26px] xl:text-[32px]">
             {project.name}
           </span>
-          <span className="ml-1 xl:text-2xl  text-sm md:text-base">
+          <span className="ml-1 xl:text-2xl  text-sm md:text-base italic">
             {project.type.map(t => `(${t})`)}
           </span>
         </p>
       </Link>
       <Image
+        priority
         style={{
           left: isHovered.state ? isHovered.position - 100 : 0,
         }}
