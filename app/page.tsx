@@ -9,11 +9,11 @@ export default function Home() {
     ).getFullYear() - 1970
   return (
     <main className=" tracking-[-9%] ">
-      <header className="h-[calc(100vh-200px)] grid items-end px-8 ">
-        <h1 className="ml-9 sm:mx-13 md:text-[84px] mb-4 text-[69px] leading-[0.84] indent-[42px] md:indent-[72px] 2xl:text-[160px] md:w-[text-100px] lg:text-[132px] 3xl:text-[192px] font-normal">
+      <header className="h-[calc(100vh-200px)] grid items-end px-8 pr-5">
+        <h1 className="sm:mx-13 md:text-[84px] mb-4 text-[65px]  leading-[0.84] indent-[42px] md:indent-[72px] 2xl:text-[160px] md:w-[text-100px] lg:text-[132px] 3xl:text-[192px] font-normal">
           Lee <span className="italic">({age})</span>, a visual
           designer and these are my works{" "}
-          <div className="inline -ml-4">
+          <div className="inline-flex -ml-4 items-center h-full align-middle">
             <Image
               alt=""
               width={36}

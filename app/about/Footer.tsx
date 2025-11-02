@@ -6,12 +6,16 @@ export default function Footer() {
     <footer>
       <ul className="flex justify-center gap-[66px] lg:pt-30 md:justify-end md:pr-10 pt-20">
         <li>
-          <Link href={"https://www.instagram.com/leeeeee.indd/"}>
+          <Link
+            href={"https://www.instagram.com/leeeeee.indd/"}
+            target="_"
+          >
             /instagram
           </Link>
         </li>
         <li>
           <Link
+            target="_"
             href={
               "https://www.linkedin.com/in/lee-mor-yosef-8254aa395/"
             }
