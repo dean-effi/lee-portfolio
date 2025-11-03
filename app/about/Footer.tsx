@@ -3,8 +3,8 @@ import React from "react"
 
 export default function Footer() {
   return (
-    <footer>
-      <ul className="flex  justify-center gap-[66px] lg:pt-30 md:justify-end md:pr-10 pt-20">
+    <footer className="self-end">
+      <ul className="flex  justify-center gap-[66px] lg:pt-20 md:justify-end md:pr-10 pt-10 pb-5 ">
         <li>
           <Link
             href={"https://www.instagram.com/leeeeee.indd/"}

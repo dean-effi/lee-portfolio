@@ -3,7 +3,7 @@ import Footer from "./Footer"
 
 export default function about() {
   return (
-    <div className=" leading-tight tracking-[-0.08em] ">
+    <div className=" leading-tight tracking-[-0.08em] h-[calc(100vh-230px)] grid">
       <main className="px-9 md:px-13 xl:pt-14 ">
         <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] mb-9 ">
           <p className="indent-[42px] lg:indent-[72px]">
@@ -26,7 +26,7 @@ export default function about() {
           alt="lee's portrait"
           width={420}
           height={400}
-          src="/archive/06.webp"
+          src="/lee.png"
         />
       </main>
       <Footer />
