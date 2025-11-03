@@ -34,11 +34,17 @@ export default function Home() {
       <section
         aria-label="projects"
         id="projects"
-        className="bg-neutral-950 text-neutral-50 px-8 md:px-15 space-y-6 xl:space-y-[75px] md:space-y-8 pt-11  xl:pt-[130px] min-h-screen xl:pr-0"
+        className="bg-neutral-950 text-neutral-50 px-8 md:px-15 pt-11  xl:pt-[130px] min-h-screen xl:pr-0 pb-4 xl:pb-0"
       >
-        {projectsData.map(p => {
-          return <ProjectPreview key={p.name} project={p} />
-        })}
+        <ul className=" space-y-6 xl:space-y-[75px] md:space-y-8">
+          {projectsData.map(p => {
+            return (
+              <li key={p.name}>
+                <ProjectPreview project={p} />
+              </li>
+            )
+          })}
+        </ul>
       </section>
     </main>
   )

@@ -12,23 +12,21 @@ export default function NavBar() {
         theme === "dark" ? "text-neutral-50 bg-neutral-950" : ""
       }`}
     >
-      <div>
-        <Link aria-label="home" href={"/"}>
-          {"<3"}
-        </Link>
-      </div>
-      <div className="grid gap-13">
-        <ul>
+      <Link aria-label="home" href={"/"}>
+        {"<3"}
+      </Link>
+      <ul className="grid gap-13">
+        <li>
           <Link aria-label="works" href={"/#projects"}>
             /works
           </Link>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <Link aria-label="about" href={"/about"}>
             //about
           </Link>
-        </ul>
-      </div>
+        </li>
+      </ul>
     </nav>
   )
 }

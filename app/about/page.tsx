@@ -5,6 +5,7 @@ export default function about() {
   return (
     <div className=" leading-tight tracking-[-0.08em] h-[calc(100vh-230px)] grid">
       <main className="px-9 md:px-13 xl:pt-14 ">
+        <h1 className="sr-only">About Lee Mor Yosef</h1>
         <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] mb-9 ">
           <p className="indent-[42px] lg:indent-[72px]">
             I'm Lee, a 21-year-old Visual Communication student in my

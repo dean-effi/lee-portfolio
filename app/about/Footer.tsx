@@ -8,14 +8,18 @@ export default function Footer() {
         <li>
           <Link
             href={"https://www.instagram.com/leeeeee.indd/"}
-            target="_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
           >
             /instagram
           </Link>
         </li>
         <li>
           <Link
-            target="_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
             href={
               "https://www.linkedin.com/in/lee-mor-yosef-8254aa395/"
             }
@@ -25,7 +29,9 @@ export default function Footer() {
         </li>
         <li>
           <Link
-            target="_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email me"
             href={
               "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=lilymy28@gmail.com"
             }
