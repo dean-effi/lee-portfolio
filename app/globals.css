@@ -3,3 +3,25 @@
 @theme {
   --breakpoint-3xl: 110rem;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media (min-width: 1280) {
+  .btt {
+    display: block;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(1);
+  }
+}

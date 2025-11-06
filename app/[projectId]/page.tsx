@@ -22,7 +22,7 @@ export default function ProjectPage() {
         <p className="italic  md:text-xl">{project.created}</p>
       </div>
 
-      <div className="space-y-6 md:space-y-8 mt-7 md:mt-8 grid justify-center xl:mt-0">
+      <div className="space-y-6 md:space-y-8 mt-7 md:mt-8 grid justify-center xl:mt-0 pb-10">
         {project.images.map(img => {
           return (
             <Image
