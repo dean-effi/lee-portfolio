@@ -9,25 +9,24 @@ export default function about() {
         <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] mb-9 ">
           <p className="indent-[42px] lg:indent-[72px]">
             I'm Lee, a 21-year-old Visual Communication student in my
-            4th year at Bezalel Academy of Arts and Design in
-            Jerusalem.
+            4th year at Bezalel Academy of Arts and Design.
           </p>
           <p className="indent-[42px] lg:indent-[72px]">
-            I approach design as an inquisitive process that examines
-            the relationship between form, language, and meaning. My
-            work spans print and digital, often navigating between
-            past and present, creating visual connections across time.
+            I approach design as an exploratory process that examines
+            the relationships between form, language and meaning.
           </p>
           <p className="indent-[42px] lg:indent-[72px]">
-            I work across graphic and typographic design, UI/UX
-            interfaces, and illustration.
+            My work ranges from print to digital and focuses on
+            creating a cohesive visual identity and engaging in
+            graphic and typographic design, UI/UX design, and
+            illustration.
           </p>
         </div>
         <Image
           alt="lee's portrait"
           width={420}
           height={400}
-          src="/lee.png"
+          src="/lee.webp"
         />
       </main>
       <Footer />
