@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Footer from "./Footer"
+import AboutFooter from "../components/AboutFooter"
 
 export default function about() {
   return (
@@ -27,9 +27,10 @@ export default function about() {
           width={420}
           height={400}
           src="/lee.webp"
+          priority
         />
       </main>
-      <Footer />
+      <AboutFooter />
     </div>
   )
 }

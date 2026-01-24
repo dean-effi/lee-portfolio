@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React from "react"
 
-export default function Footer() {
+export default function AboutFooter() {
   return (
     <footer className="self-end">
       <ul className="flex  justify-center gap-[66px] lg:pt-20 md:justify-end md:pr-10 pt-10 pb-5 ">

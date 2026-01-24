@@ -5,7 +5,7 @@ import ProjectPreview from "./components/ProjectPreview"
 export default function Home() {
   const age =
     new Date(
-      Date.now() - new Date(2004, 8, 11).getTime()
+      Date.now() - new Date(2004, 8, 11).getTime(),
     ).getFullYear() - 1970
   return (
     <main className=" tracking-[-0.09em] ">
@@ -19,6 +19,7 @@ export default function Home() {
               width={36}
               height={36}
               src={downRight}
+              priority
               className="aspect-square  inline w-20  lg:w-30 xl:w-40 "
             />
             <Image
@@ -26,6 +27,7 @@ export default function Home() {
               width={36}
               height={36}
               src={downRight}
+              priority
               className="aspect-square  inline w-20 lg:w-30 xl:w-40  "
             />
           </div>
