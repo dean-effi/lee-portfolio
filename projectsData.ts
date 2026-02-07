@@ -5,11 +5,13 @@ export type ProjectType = {
   type: string[]
   descrpition: string
   created: string
+  slug: string
 }
 
 const projectsData: ProjectType[] = [
   {
     name: "Alef Bet: The Evolution of Hebrew Scripts",
+    slug: "alef-bet",
     preview: "/alef-bet/preview.webp",
     images: [
       "/alef-bet/01.webp",
@@ -31,6 +33,7 @@ const projectsData: ProjectType[] = [
 
   {
     name: "The Communist Manifesto",
+    slug: "communist-manifesto",
     preview: "/communist-manifesto/preview.webp",
     images: [
       "/communist-manifesto/01.mp4",
@@ -47,6 +50,8 @@ const projectsData: ProjectType[] = [
   },
   {
     name: "Gag Eden",
+
+    slug: "gag-eden",
     preview: "/gag-eden/preview.webp",
     images: [
       "/gag-eden/01.gif",
@@ -64,14 +69,15 @@ const projectsData: ProjectType[] = [
   },
   {
     name: "Alef Bet: Archive of Hebrew Manuscripts",
-    preview: "/archive/preview.webp",
+    slug: "alef-bet-archive",
+    preview: "/alef-bet-archive/preview.webp",
     images: [
-      "/archive/01.gif",
-      "/archive/02.webp",
-      "/archive/03.webp",
-      "/archive/04.webp",
-      "/archive/05.webp",
-      "/archive/06.webp",
+      "/alef-bet-archive/01.gif",
+      "/alef-bet-archive/02.webp",
+      "/alef-bet-archive/03.webp",
+      "/alef-bet-archive/04.webp",
+      "/alef-bet-archive/05.webp",
+      "/alef-bet-archive/06.webp",
     ],
     type: ["branding", "graphic design"],
     descrpition:
@@ -81,6 +87,7 @@ const projectsData: ProjectType[] = [
   },
   {
     name: "Zeit",
+    slug: "zeit",
     preview: "/zeit/preview.webp",
     images: [
       "/zeit/02.webp",
@@ -97,6 +104,7 @@ const projectsData: ProjectType[] = [
   },
   {
     name: "Hassidut Chabad",
+    slug: "hassidut-chabad",
     preview: "/hassidut-chabad/preview.webp",
     images: [
       "/hassidut-chabad/01.mp4",

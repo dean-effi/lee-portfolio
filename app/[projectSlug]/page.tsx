@@ -4,19 +4,19 @@ import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
   return projectsData.map(project => ({
-    projectId: project.name.replace(":", "-"),
+    projectSlug: project.slug,
   }))
 }
 
 export default async function ProjectPage({
   params,
 }: {
-  params: Promise<{ projectId: string }>
+  params: Promise<{ projectSlug: string }>
 }) {
-  let path = decodeURIComponent((await params).projectId)
-  path = path.replace("-", ":")
+  let path = decodeURIComponent((await params).projectSlug)
   console.log(path)
-  const project = projectsData.find(p => p.name === path)
+
+  const project = projectsData.find(p => p.slug === path)
   if (!project) return notFound()
   return (
     <main className="bg-neutral-950 text-neutral-50 px-9 md:px-13 pt-6 xl:gap-18  md:pt-10 xl:grid xl:grid-cols-2 relative">
@@ -66,4 +66,33 @@ export default async function ProjectPage({
       </div>
     </main>
   )
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ projectSlug: string }>
+}) {
+  let path = decodeURIComponent((await params).projectSlug)
+  const project = projectsData.find(p => path === p.slug)
+
+  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    : "http://localhost:3000"
+
+  // console.log(`${baseUrl}/${project?.slug}/preview.webp`)
+  return {
+    title: `${project?.name} | lee's Portfolio`,
+    description: project?.descrpition,
+    openGraph: {
+      images: [
+        {
+          url: `${baseUrl}/${project?.slug}/preview.webp`,
+          width: 1280,
+          height: 720,
+          alt: `Project preview for ${project?.name}`,
+        },
+      ],
+    },
+  }
 }
