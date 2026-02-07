@@ -9,6 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Lee's portfolio",
+  icons: "/icon.svg",
   description:
     "I'm Lee Effi, a 21-year-old Visual Communication student in my 4th year at Bezalel Academy of Arts and Design in Jerusalem. I approach design as an inquisitive process that examines the relationship between form, language, and meaning. My work spans print and digital, often navigating between past and present, creating visual connections across time. I work across graphic and typographic design, UI/UX interfaces, and illustration.",
 }

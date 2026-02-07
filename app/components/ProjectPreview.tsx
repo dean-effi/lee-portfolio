@@ -20,7 +20,7 @@ export default function ProjectPreview({
       key={project.name}
       className="grid gap-2 md:grid-cols-[1fr_200px] lg:grid-cols-[1fr_250px] xl:ml-21 relative"
     >
-      <Link className=" " href={project.name}>
+      <Link className=" " href={project.name.replace(":", "-")}>
         <p
           className="leading-2 xl:w-max pointer-events-none xl:pointer-events-auto"
           onMouseMove={e => {

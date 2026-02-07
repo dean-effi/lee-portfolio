@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
   return projectsData.map(project => ({
-    projectId: project.name,
+    projectId: project.name.replace(":", "-"),
   }))
 }
 
@@ -13,7 +13,9 @@ export default async function ProjectPage({
 }: {
   params: Promise<{ projectId: string }>
 }) {
-  const path = decodeURIComponent((await params).projectId)
+  let path = decodeURIComponent((await params).projectId)
+  path = path.replace("-", ":")
+  console.log(path)
   const project = projectsData.find(p => p.name === path)
   if (!project) return notFound()
   return (
