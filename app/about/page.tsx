@@ -1,9 +1,9 @@
 import Image from "next/image"
 import AboutFooter from "../components/AboutFooter"
-
+import leeImg from "../assets/lee.webp"
 export default function about() {
   return (
-    <div className=" leading-tight tracking-[-0.08em] h-[calc(100vh-230px)] grid">
+    <div className=" leading-tight tracking-[-0.08em] h-[calc(100vh-230px)] ">
       <main className="px-9 md:px-13 xl:pt-14 ">
         <h1 className="sr-only">About Lee Mor Yosef</h1>
         <div className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] mb-9 ">
@@ -24,9 +24,9 @@ export default function about() {
         </div>
         <Image
           alt="lee's portrait"
+          src={leeImg}
+          className="max-w-[420px]"
           width={420}
-          height={400}
-          src="/lee.webp"
           priority
         />
       </main>

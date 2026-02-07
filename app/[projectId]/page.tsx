@@ -14,7 +14,6 @@ export default async function ProjectPage({
   params: Promise<{ projectId: string }>
 }) {
   const path = decodeURIComponent((await params).projectId)
-  console.log(path)
   const project = projectsData.find(p => p.name === path)
   if (!project) return notFound()
   return (
@@ -31,14 +30,33 @@ export default async function ProjectPage({
       </div>
 
       <div className="space-y-6 md:space-y-8 mt-7 md:mt-8 grid justify-center xl:mt-0 pb-10">
-        {project.images.map(img => {
+        {project.images.map((img, i) => {
+          if (img.split(".")[1] === "mp4") {
+            return (
+              <video
+                className="w-full"
+                src={img}
+                key={img}
+                loop
+                muted
+                autoPlay
+                aria-label={
+                  project.name + " overview - " + Number(1 + i)
+                }
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
+            )
+          }
           return (
             <Image
               key={img}
-              alt={project.name}
+              alt={project.name + " overview - " + Number(1 + i)}
               src={img}
               width={900}
               height={700}
+              className="w-[900px] h-auto"
               priority
             />
           )

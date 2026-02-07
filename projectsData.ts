@@ -33,7 +33,7 @@ const projectsData: ProjectType[] = [
     name: "The Communist Manifesto",
     preview: "/communist-manifesto/preview.webp",
     images: [
-      "/communist-manifesto/01.gif",
+      "/communist-manifesto/01.mp4",
       "/communist-manifesto/02.webp",
       "/communist-manifesto/03.webp",
       "/communist-manifesto/04.webp",
@@ -99,7 +99,7 @@ const projectsData: ProjectType[] = [
     name: "Hassidut Chabad",
     preview: "/hassidut-chabad/preview.webp",
     images: [
-      "/hassidut-chabad/01.gif",
+      "/hassidut-chabad/01.mp4",
       "/hassidut-chabad/02.webp",
       "/hassidut-chabad/03.webp",
       "/hassidut-chabad/04.webp",
